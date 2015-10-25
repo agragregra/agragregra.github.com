@@ -174,8 +174,7 @@ Global Styles
 a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
 a:hover, a:focus { color: #3dc9b3; text-decoration: none; }
 p { color: #8c9398; word-spacing: 1px; line-height: 25px; font-size: 14px; }
-h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
-h2::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px; margin: 25px auto; }
+h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; margin-bottom: 50px; }
 .section-padding { padding: 90px 0 100px }
 .dark-bg { background: #f3f5f8; }
 .light-bg { background-color: #fff; }
@@ -223,7 +222,7 @@ Intro
 ========================================================================== */
 .intro { background: #f3f5f8; }
 .intro p { margin: 50px 0 0; }
-h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
+h1.arrow, h2.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
 /* ==========================================================================
 Features
 ========================================================================== */
