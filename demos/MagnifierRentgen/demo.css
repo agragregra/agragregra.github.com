@@ -1,0 +1,7 @@
+.wrap {
+  max-width: 480px;
+  margin: 80px auto;
+  padding: 10px 20px;
+  border: tomato 7px solid;
+  position: relative;
+}
