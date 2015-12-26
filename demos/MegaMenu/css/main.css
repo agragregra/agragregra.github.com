@@ -133,6 +133,10 @@ a {
   z-index: 2;
 }
 
+.sf-menu .sfHover a {
+  color: #FB0106;
+}
+
 .sf-menu a {
   color: #333;
   background-color: #fff;
