@@ -133,10 +133,6 @@ a {
   z-index: 2;
 }
 
-.sf-menu .sfHover a {
-  color: #FB0106;
-}
-
 .sf-menu a {
   color: #333;
   background-color: #fff;
@@ -149,6 +145,10 @@ a {
 
 .sf-menu > li:last-child {
   border-right: #ddd 1px solid;
+}
+
+.sf-menu > li.sfHover > a {
+  color: #FB0106;
 }
 
 .sf-menu > li > a {

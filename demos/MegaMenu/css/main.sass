@@ -108,9 +108,6 @@ a
 
 //Custom Styles
 .sf-menu
-	.sfHover
-		a
-			color: $main-color
 	a
 		color: #333
 		background-color: #fff
@@ -119,6 +116,9 @@ a
 		border-left: #ddd 1px solid
 		&:last-child
 			border-right: #ddd 1px solid
+		&.sfHover
+			> a
+				color: $main-color
 		> a
 				padding: 30px 30px
 				border-bottom: 5px solid transparent
