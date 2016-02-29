@@ -1,0 +1,133 @@
+body {
+  color: #333;
+}
+
+h1 {
+  color: #fff;
+}
+
+section h2,
+footer h2 {
+  color: #005275;
+}
+section.s_dark h2, section.s_dark h3, section.s_dark p,
+footer.s_dark h2,
+footer.s_dark h3,
+footer.s_dark p {
+  color: #fff;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #3f9434;
+  box-shadow: #3f9434 0 0 0 2px;
+  border-color: #3f9434;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #3f9434;
+}
+
+/* Top Image Opacity Overlay */
+.image_overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Reviews Image Opacity Overlay */
+.s_rewview .image_overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Middle Image Opacity Overlay */
+.red_overlay {
+  background-color: rgba(0, 39, 56, 0.9);
+}
+
+.bottom_phone {
+  color: #002344;
+}
+
+.loader .loader_inner {
+  background-image: url("../../img/preloader.gif");
+}
+
+.tabs_header .tabs .tab.active {
+  color: #222;
+}
+.tabs_header .tab_content {
+  color: #222;
+}
+
+.button {
+  background-color: #222;
+}
+.button.btn_red {
+  background-color: #002344;
+}
+.button.btn_green {
+  background-color: #3f9434;
+}
+.button.btn_white {
+  background-color: #fff;
+  color: #222;
+}
+
+.s_tizers {
+  border-bottom: #f5f5f5 2px solid;
+  color: #005275;
+}
+
+.prifi_left {
+  color: #002344;
+}
+
+.profi_right h3 {
+  color: #002344;
+}
+.profi_right h3::after {
+  background-color: #002344;
+}
+
+form {
+  border: #3f9434 5px solid;
+}
+form .form_error {
+  color: #002344;
+}
+form input:focus,
+form select:focus {
+  box-shadow: #3f9434 0 0 0 2px;
+  border-color: #3f9434;
+}
+
+.review_item .image_wrap img:hover {
+  box-shadow: #002344 0 0 0 2px;
+}
+
+.s_back {
+  background-color: #002344;
+}
+
+.s_contacts h2 {
+  color: #222;
+}
+.s_contacts .tabs .tab {
+  border: #002344 5px solid;
+  color: #002344;
+}
+.s_contacts .tabs .tab.active {
+  background-color: #002344;
+}
+
+.map {
+  background-color: #333;
+}
+
+footer h2 {
+  color: #333;
+}
+
+.my.my_ex {
+  background-color: #002344;
+}

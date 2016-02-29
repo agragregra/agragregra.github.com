@@ -1,0 +1,135 @@
+body {
+  color: #333;
+}
+
+h1 {
+  color: #fff;
+}
+
+section h2,
+footer h2 {
+  color: #a07557;
+}
+section.s_dark h2, section.s_dark h3, section.s_dark p,
+footer.s_dark h2,
+footer.s_dark h3,
+footer.s_dark p {
+  color: #fff;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #a07557;
+  box-shadow: #a07557 0 0 0 2px;
+  border-color: #a07557;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #a07557;
+}
+
+/* Top Image Opacity Overlay */
+.image_overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Reviews Image Opacity Overlay */
+.s_rewview .image_overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Middle Image Opacity Overlay */
+.red_overlay {
+  background-color: rgba(44, 36, 38, 0.9);
+}
+
+.bottom_phone {
+  color: #4D4044;
+}
+
+.loader .loader_inner {
+  background-image: url("../../img/preloader.gif");
+}
+
+.tabs_header .tabs .tab.active {
+  color: #222;
+}
+.tabs_header .tab_content {
+  color: #222;
+}
+
+.button {
+  background-color: #222;
+}
+.button.btn_red {
+  background-color: #4D4044;
+}
+.button.btn_green {
+  background-color: #a07557;
+}
+.button.btn_white {
+  background-color: #fff;
+  color: #222;
+}
+
+.s_tizers {
+  background-color: white;
+  background-image: linear-gradient(white, white);
+  color: #a07557;
+  border-bottom: #a07557 2px solid;
+}
+
+.prifi_left {
+  color: #4D4044;
+}
+
+.profi_right h3 {
+  color: #4D4044;
+}
+.profi_right h3::after {
+  background-color: #4D4044;
+}
+
+form {
+  border: #a07557 5px solid;
+}
+form .form_error {
+  color: #4D4044;
+}
+form input:focus,
+form select:focus {
+  box-shadow: #a07557 0 0 0 2px;
+  border-color: #a07557;
+}
+
+.review_item .image_wrap img:hover {
+  box-shadow: #4D4044 0 0 0 2px;
+}
+
+.s_back {
+  background-color: #4D4044;
+}
+
+.s_contacts h2 {
+  color: #222;
+}
+.s_contacts .tabs .tab {
+  border: #4D4044 5px solid;
+  color: #4D4044;
+}
+.s_contacts .tabs .tab.active {
+  background-color: #4D4044;
+}
+
+.map {
+  background-color: #333;
+}
+
+footer h2 {
+  color: #333;
+}
+
+.my.my_ex {
+  background-color: #4D4044;
+}

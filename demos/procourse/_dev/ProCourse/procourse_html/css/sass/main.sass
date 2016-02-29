@@ -1,0 +1,584 @@
+@import "bourbon/bourbon"
+
+$text-color: #333
+$dark-color: #222
+$red-color: #9B1818
+$blue-color: #003469
+$green-color: #67bc5c
+
+
+body
+	font-family: "Roboto", sans-serif
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	-webkit-font-smoothing: antialised
+	overflow-x: hidden
+
+h1
+	font-size: 69px
+	line-height: 56px
+	font-weight: normal
+	font-family: "Raleway", sans-serif
+	font-weight: 300
+	margin: 0
+
+section,
+footer
+	padding: 70px 0
+	position: relative
+	h2
+		font-size: 50px
+		line-height: 56px
+		font-size: 44px
+		margin-bottom: 60px
+		font-family: "Raleway", sans-serif
+		font-weight: 300
+		text-align: center
+		margin-top: 0
+		font-weight: normal
+
+p strong
+	font-family: "Roboto", sans-serif
+	font-weight: bold
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	+ .form_error
+		opacity: 0
+
+.hidden
+	display: none
+
+header
+	min-height: 640px
+	background-image: url(../img/bg/top_bg.jpg)
+	background-position: top center
+	background-size: cover
+	color: #fff
+	padding-top: 32px
+	padding-bottom: 40px
+	position: relative
+
+.image_overlay,
+.red_overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+.logo,
+.logo a
+	font-size: 34px
+	font-family: "Roboto", sans-serif
+	font-weight: bold
+	color: #fff
+	text-decoration: none
+
+.logo
+	cursor: default
+
+.top_phone,
+.bottom_phone
+	text-align: right
+
+.bottom_phone
+	text-align: center
+	margin-top: 50px
+
+body .tab_item
+	display: none
+body .tab_item:first-child
+	display: block
+
+.loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-size: cover
+		background-repeat: no-repeat
+		background-posirion: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+.top_phon,
+.bottom_phone
+	.wrapper .tab
+		text-transform: uppercase
+		cursor: pointer
+.top_phone,
+.bottom_phone
+	.tab
+		cursor: pointer
+	.wrapper .active
+		text-decoration: underline
+.top_phone,
+.bottom_phone
+	.tab_item
+		display: none
+		font-size: 34px
+		font-family: "Roboto", sans-serif
+		font-weight: bold
+
+.top_header
+	margin-top: 80px
+	h2
+		margin: 10px 0 0
+		font-family: "Raleway", sans-serif
+		font-weight: 300
+		font-size: 36px
+
+.tabs_header
+	margin-top: 50px
+	ul, li
+		list-style-type: none
+		margin: 0
+		padding: 0
+	li
+		padding-left: 40px
+		position: relative
+		margin-bottom: 10px
+		margin-top: 10px
+	i
+		position: absolute
+		left: 0
+		top: 0
+		line-height: 26px
+		color: #6F6A67
+		&.fa
+			left: 10px
+	.tabs
+		.tab
+			display: inline-block
+			background-color: rgba(255,255,255,.25)
+			padding: 15px 18px
+			text-transform: uppercase
+			cursor: pointer
+			float: left
+			font-family: "Roboto", sans-serif
+			font-weight: bold
+			+transition(all .25s ease)
+			letter-spacing: 2px
+			&.active
+				background-color: rgba(255,255,255,.6)
+			&:hover
+
+	.tab_content
+		font-size: 16px
+		background-color: rgba(255,255,255,.6)
+		padding: 12px 18px 16px
+		font-family: "Roboto", sans-serif
+
+
+.button
+	border: none
+	cursor: pointer
+	display: inline-block
+	height: 46px
+	line-height: 46px
+	padding: 0 32px 0 25px
+	text-transform: uppercase
+	text-align: center
+	color: #fff
+	border-radius: 3px
+	font-size: 16px
+	font-family: "Roboto", sans-serif
+	font-weight: bold
+	box-shadow: rgba(0,0,0,.05) 0 0 0 40px inset
+	+transition(all .5s)
+	letter-spacing: 1px
+	white-space: nowrap
+	&:hover
+		box-shadow: rgba(0,0,0,.2) 0 -5px 0 0 inset
+		&::before
+			width: 15px
+			opacity: 1
+	&:active
+		box-shadow: rgba(0,0,0,.25) 0 0 20px inset
+	&::before
+		font-family: "FontAwesome"
+		margin-right: 10px
+		content: "\f00c"
+		width: 0
+		overflow: hidden
+		display: inline-block
+		+transition(all .5s)
+		vertical-align: middle
+		opacity: 0
+		text-align: center
+		vertical-align: bottom
+	&.tab
+		&::before
+			width: 15px
+			margin-left: -10px
+	&.active
+		&::before
+			display: inline-block
+			width: 15px
+			opacity: 1
+
+.button_wrap
+	text-align: right
+	margin-top: 20px
+
+a.button
+	color: #fff
+	text-decoration: none
+
+.s_tizers
+	font-family: "Raleway", sans-serif
+	font-weight: 300
+	text-transform: uppercase
+	padding: 40px 0 0
+	border-bottom: 2px #fff solid
+	span
+		font-size: 15px
+		display: block
+	strong
+		font-weight: normal
+		font-size: 20px
+		display: block
+	.row
+		> div
+			margin-bottom: 35px
+
+.tiz_img,
+.tiz_descr
+	display: inline-block
+	vertical-align: bottom
+
+.tiz_img i
+	font-size: 70px
+	line-height: 48px
+	margin-right: 5px
+
+.s_tizers .row
+	> div:nth-child(1)
+		i
+			font-family: "Roboto", sans-serif
+			letter-spacing: -12px
+			margin-right: 18px
+			line-height: 60px
+		strong
+			font-size: 20px
+			line-height: 28px
+		span
+			font-size: 16px
+			line-height: 24px
+	> div:nth-child(2)
+		strong
+			font-size: 20px
+			line-height: 28px
+		span
+			font-size: 14px
+			line-height: 24px
+		i
+			position: relative
+			bottom: -3px
+	> div:nth-child(3)
+		strong
+			line-height: 28px
+		span
+			line-height: 20px
+	> div:nth-child(4)
+		span
+			font-size: 14px
+			line-height: 12px
+		strong
+			line-height: 34px
+		i
+			line-height: 54px
+
+.prifi_left
+	i
+		font-size: 90px
+		line-height: 95px
+
+.profi_item
+	margin-bottom: 10px
+	&:last-child
+		margin-bottom: 0
+	.row
+		i
+			+transition(all .5s ease)
+		cursor: default
+		&.hover
+			i
+				+transform(scale(1.2))
+			h3::after
+				width: 100%
+
+.profi_right
+	h3
+		display: inline-block
+		margin: 0 0 5px 0
+		font-size: 28px
+		line-height: 32px
+		font-weight: normal
+		font-family: "Raleway", sans-serif
+		font-weight: 300
+		&::after
+			content: ""
+			display: block
+			height: 2px
+			width: 0
+			+transition(all .75s)
+	p
+		margin-top: 0
+		font-size: 15px
+		color: #666
+
+form
+	background-color: #F7F7F7
+	padding: 25px 30px
+	border-radius: 5px
+	.form_error
+		display: block
+		margin-top: 3px
+		font-size: 12px
+		position: absolute
+		opacity: 0
+		+transition(all .5s)
+	h2
+		text-transform: uppercase
+		margin-top: 0
+		font-family: "Roboto", sans-serif
+		font-size: 18px
+		color: #555
+		line-height: 22px
+		margin-bottom: 30px
+		font-weight: normal
+		letter-spacing: 2px
+	label
+		display: block
+		margin-bottom: 15px
+		color: #666
+		font-size: 14px
+		letter-spacing: 2px
+	input,
+	select
+		display: block
+		line-height: 40px
+		height: 40px
+		border: #D9D9D9 1px solid
+		box-shadow: 0 0 20px rgba(0,0,0,.06) inset
+		width: 100%
+		text-indent: 10px
+		font-size: 20px
+		margin-top: 3px
+		letter-spacing: 0
+		&:focus
+			border-radius: 3px
+	select
+		background-image: url(../img/arrow.svg)
+		background-position: right 8% center
+		background-repeat: no-repeat
+		width: 110%
+		text-indent: 4px
+	.button_wrap
+		text-align: center
+		margin: 30px 0 10px
+.label_select
+	border-right: #D9D9D9 1px solid
+	display: block
+	overflow: hidden
+	margin-top: 3px
+	select
+		margin-top: 0
+
+.s_rewview
+	background-image: url(../img/bg/middle_bg.jpg)
+	background-attachment: fixed
+	min-height: 500px
+	background-position: center top
+	background-size: cover
+	background-color: #412521
+
+.review_item
+	color: #fff
+	text-align: center
+	h4
+		font-family: "Times New Roman", serif
+		font-style: italic
+		font-size: 22px
+		font-weight: normal
+		margin-top: 20px
+		margin-bottom: 20px
+	p
+		margin: 30px auto 0
+		display: inline-block
+		float: none
+		font-size: 15px
+		font-family: "Raleway", sans-serif
+		font-weight: 300
+	.image_wrap
+		text-align: center
+		padding-top: 3px
+		img
+			width: 165px
+			height: 165px
+			display: inline-block
+			border-radius: 50%
+			border: #585A5B 10px solid
+			+transition(all .5s)
+			&:hover
+				border: rgba(0,0,0,.1) 10px solid
+
+.hr
+	width: 80px
+	height: 1px
+	background-color: #CEA380
+	margin: auto
+
+.owl-nav
+	div
+		width: 34px
+		height: 140px
+		background-image: url(../img/s_arrows.png)
+		top: 20px
+		position: absolute
+		opacity: .5
+		+transition(.5s ease)
+		&:hover
+			opacity: 1
+		&.owl-next
+			right: 0
+			background-position: top right
+
+.owl-dots
+	width: 100%
+	margin-top: 20px
+	text-align: center
+	.owl-dot
+		width: 14px
+		height: 14px
+		background-color: #fff
+		display: inline-block
+		margin: 0 4px
+		border-radius: 50%
+		opacity: .5
+		&.active
+			opacity: .8
+
+.s_back
+	background-image: url(../img/flags_bg/eng_bg.jpg)
+	background-size: cover
+	background-attachment: fixed
+	background-position: top center
+	text-align: center
+	padding: 50px 0
+	h3
+		margin-top: 0
+		margin-bottom: 30px
+		text-transform: uppercase
+		font-weight: normal
+		font-size: 26px
+		text-align: center
+		background-color: rgba(255,255,255,.15)
+		padding: 10px
+	.button
+		margin: auto
+
+.s_contacts
+	padding-bottom: 0
+	.wrapper
+		margin-top: 15px
+		font-size: 18px
+	.contacts_top
+	text-align: center
+	h2
+		display: inline-block
+		vertical-align: middle
+		margin-bottom: 0
+		height: 45px
+		line-height: 45px
+	.tabs
+		display: inline-block
+		vertical-align: middle
+		line-height: 45px
+		margin-left: 20px
+		.tab
+			float: left
+			padding: 0 30px
+			line-height: 38px
+			box-shadow: none
+			border-radius: 0
+			&:first-child
+				border-radius: 3px 0 0 3px
+			&:last-child
+				border-radius: 0 3px 3px 0
+			&.active
+				color: #fff
+
+.map
+	margin-top: 20px
+	min-height: 480px
+
+footer
+	.button_wrap
+		text-align: center
+		margin-top: 30px
+	h2
+		margin-bottom: 30px
+	p
+		font-size: 18px
+		text-align: center
+		margin-top: 0
+
+.mfp-content form
+	max-width: 420px
+	margin: auto
+	position: relative
+	h2
+		text-align: center
+		font-weight: normal
+
+.other_langs
+	text-align: center
+	h3
+		font-family: "Raleway", sans-serif
+		font-weight: 300
+		font-weight: normal
+		font-size: 22px
+		margin-bottom: 5px
+	ul, li
+		padding: 0
+		margin: 0
+		list-style-type: none
+	li
+		display: inline-block
+		margin: 0 2px
+
+.my.my_ex
+	border-radius: 50%
+	color: #fff
+	font-family: "Roboto", sans-serif
+	font-size: 36px
+	height: 78px
+	line-height: 18px
+	text-align: center
+	width: 78px
+	padding-top: 18px
+	letter-spacing: -5px
+	text-indent: -5px
+	span
+		font-size: 16px
+		font-family: "Raleway", sans-serif
+		font-weight: 300
+		letter-spacing: 0
+
