@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>Layers WP  &#8212; StyleKit Lesson | Ещё один сайт на WordPress</title>
+<link rel="alternate" type="application/rss+xml" title="Layers WP  - StyleKit Lesson &raquo; Лента" href="feed/" />
+<link rel="alternate" type="application/rss+xml" title="Layers WP  - StyleKit Lesson &raquo; Лента комментариев" href="comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/stylekit-lesson\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+			<style>
+			#wp-admin-bar-layers-edit-layout .ab-icon:before{
+				font-family: "layers-interface" !important;
+				content: "\e62f" !important;
+				font-size: 16px !important;
+			}
+			</style>
+		<link rel='stylesheet' id='layers-google-fonts-css'  href='hthttp://fonts.googleapis.com/css?family=Raleway%3Aregular%2C700%2C100%2C200%2C300%2C500%2C600%2C800%2C900%7COpen+Sans%3Aregular%2Citalic%2C700%2C300%2C300italic%2C600%2C600italic%2C700italic%2C800%2C800italic&amp;ver=1.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='layers-framework-css'  href='wp-content/themes/layerswp/assets/css/framework.css' type='text/css' media='all' />
+<link rel='stylesheet' id='layers-components-css'  href='wp-content/themes/layerswp/assets/css/components.css' type='text/css' media='all' />
+<link rel='stylesheet' id='layers-responsive-css'  href='wp-content/themes/layerswp/assets/css/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='layers-icon-fonts-css'  href='wp-content/themes/layerswp/assets/css/layers-icons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='layers-style-css'  href='wp-content/themes/layerswp/style.css' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='wp-content/themes/layerswp/assets/js/plugins.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3.1" />
+<link rel='canonical' href='' />
+<link rel='shortlink' href='' />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+			<!-- Site Logo: hide header text -->
+			<style type="text/css">
+			.sitetitle, .tagline {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
+			}
+			</style>
+			</head>
+<body class="home page page-id-5 page-template page-template-builder page-template-builder-php layers-header-sticky layers-header-overlay has-site-logo">
+	<section class="wrapper invert off-canvas-right" id="off-canvas-right">
+    <a class="close-canvas" data-toggle="#off-canvas-right" data-toggle-class="open">
+        <i class="l-close"></i>
+        Close
+    </a>
+
+    <div class="row content nav-mobile">
+        <nav class="nav nav-vertical"><ul id="menu-%d0%b2%d0%b5%d1%80%d1%85%d0%bd%d0%b5%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e" class="menu"><li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="#layers-widget-column-3">Features</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="#layers-widget-column-5">Works</a></li>
+<li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="#layers-widget-column-8">Our team</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="#layers-widget-column-9">Testimonials</a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="#layers-widget-slide-5">Download</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54"><a href="#">Custom</a></li>
+</ul></nav>    </div>
+    <aside id="search-2" class="content widget widget_search"><form role="search" method="get" class="search-form" action="">
+				<label>
+					<span class="screen-reader-text">Найти:</span>
+					<input type="search" class="search-field" placeholder="Поиск&hellip;" value="" name="s" title="Найти:" />
+				</label>
+				<input type="submit" class="search-submit" value="Поиск" />
+			</form></aside>		<aside id="recent-posts-2" class="content widget widget_recent_entries">		<h5 class="section-nav-title">Свежие записи</h5>		<ul>
+					<li>
+				<a href="2015/11/02/%d0%b7%d0%b0%d0%b3%d0%be%d0%bb%d0%be%d0%b2%d0%be%d0%ba-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b/">Заголовок работы</a>
+						</li>
+				</ul>
+		</aside><aside id="recent-comments-2" class="content widget widget_recent_comments"><h5 class="section-nav-title">Свежие комментарии</h5><ul id="recentcomments"></ul></aside><aside id="archives-2" class="content widget widget_archive"><h5 class="section-nav-title">Архивы</h5>		<ul>
+	<li><a href='2015/11/'>Ноябрь 2015</a></li>
+		</ul>
+</aside><aside id="categories-2" class="content widget widget_categories"><h5 class="section-nav-title">Рубрики</h5>		<ul>
+	<li class="cat-item cat-item-4"><a href="category/our-works/" >Our Works</a>
+</li>
+		</ul>
+</aside><aside id="meta-2" class="content widget widget_meta"><h5 class="section-nav-title">Мета</h5>			<ul>
+						<li><a href="wp-login.php">Войти</a></li>
+			<li><a href="feed/"><abbr title="Really Simple Syndication">RSS</abbr> записей</a></li>
+			<li><a href="comments/feed/"><abbr title="Really Simple Syndication">RSS</abbr> комментариев</a></li>
+<li><a href="https://ru.wordpress.org/" title="Сайт работает на WordPress &#8212; современной персональной платформе для публикаций.">WordPress.org</a></li>			</ul>
+</aside></section>		<section class="wrapper-site">
+
+		
+		
+		<header class="header-site header-sticky header-overlay header-left invert" >
+						<div class="container clearfix">
+				<div class="logo">
+	
+	<a href="" class="site-logo-link" rel="home"><img width="189" height="24" src="wp-content/uploads/2015/11/logo.png" class="site-logo attachment-large" alt="logo" data-size="large" /></a>
+			<div class="site-description">
+						<h3 class="sitename sitetitle"><a href="http://stylekit-lesson">Layers WP  - StyleKit Lesson</a></h3>
+			<p class="tagline">Ещё один сайт на WordPress</p>
+					</div>
+	
+	</div>
+
+<nav class="nav nav-horizontal">
+	
+	<ul id="menu-%d0%b2%d0%b5%d1%80%d1%85%d0%bd%d0%b5%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="#layers-widget-column-3">Features</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="#layers-widget-column-5">Works</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="#layers-widget-column-8">Our team</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="#layers-widget-column-9">Testimonials</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="#layers-widget-slide-5">Download</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54"><a href="#">Custom</a></li>
+</ul>
+	<a href="" class="responsive-nav"  data-toggle="#off-canvas-right" data-toggle-class="open">
+	<span class="l-menu"></span>
+</a>
+	</nav>			</div>
+					</header>
+
+		
+		<section id="wrapper-content" class="wrapper-content">
+			
+				<section id="layers-widget-slide-3" class="widget layers-slider-widget row slide swiper-container main-slider   auto-height slider-layout-fullwidth not-full-screen" style="" >
+
+											 <div class="arrows">
+							<a href="" class="l-left-arrow animate"></a>
+							<a href="" class="l-right-arrow animate"></a>
+						</div>
+					
+					<div class="widget-layers-widget-slide-3-pages pages animate">
+													<a href="" class="page animate active"></a>
+													<a href="" class="page animate "></a>
+											</div>
+
+			 		<div class="swiper-wrapper">
+													<div  class="swiper-slide invert has-image image-top text-center" id="layers-widget-slide-3-10" style="float: left; ">
+								
+								<div class="overlay content" >
+									<div class="container clearfix">
+																					<div class="copy-container">
+												<div class="section-title large">
+																											<h3 data-swiper-parallax="-100" class="heading">Your Favorite One Page Multi Purpose Template</h3>
+																																								<div data-swiper-parallax="-300" class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p></div>
+																																								<a data-swiper-parallax="-200" href="#" class="button btn-large">Find Out More</a>
+																									</div>
+											</div>
+																													</div> <!-- .container -->
+								</div> <!-- .overlay -->
+							</div>
+													<div  class="swiper-slide invert has-image image-top text-center" id="layers-widget-slide-3-858" style="float: left; ">
+								
+								<div class="overlay content" >
+									<div class="container clearfix">
+																					<div class="copy-container">
+												<div class="section-title large">
+																											<h3 data-swiper-parallax="-100" class="heading">Your Favorite One Page Multi Purpose Template</h3>
+																																								<div data-swiper-parallax="-300" class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p></div>
+																																								<a data-swiper-parallax="-200" href="#" class="button btn-large">Find Out More</a>
+																									</div>
+											</div>
+																													</div> <!-- .container -->
+								</div> <!-- .overlay -->
+							</div>
+									 		</div>
+		 		</section>
+
+		 	
+						 	<script>
+					jQuery(function($){
+
+						var widget_layers_widget_slide_3_slider = $('#layers-widget-slide-3').swiper({
+						mode:'horizontal'
+						,bulletClass: 'swiper-pagination-switch'
+						,bulletActiveClass: 'swiper-active-switch swiper-visible-switch'
+						,paginationClickable: true
+						,watchActiveIndex: true
+																				,pagination: '.widget-layers-widget-slide-3-pages'
+																						,loop: true
+																										});
+
+													// Allow keyboard control
+							widget_layers_widget_slide_3_slider.enableKeyboardControl();
+						
+													layers_swiper_resize( widget_layers_widget_slide_3_slider );
+							$(window).resize(function(){
+								layers_swiper_resize( widget_layers_widget_slide_3_slider );
+							});
+						
+						$('#layers-widget-slide-3').find('.arrows a').on( 'click' , function(e){
+							e.preventDefault();
+
+							// "Hi Mom"
+							$that = $(this);
+
+							if( $that.hasClass( 'swiper-pagination-switch' ) ){
+								// Anchors
+								widget_layers_widget_slide_3_slider.slideTo( $that.index() );
+							} else if( $that.hasClass( 'l-left-arrow' ) ){
+								// Previous
+								widget_layers_widget_slide_3_slider.slidePrev();
+							} else if( $that.hasClass( 'l-right-arrow' ) ){
+								// Next
+								widget_layers_widget_slide_3_slider.slideNext();
+							}
+
+							return false;
+						});
+
+						widget_layers_widget_slide_3_slider.init();
+					})
+			 	</script>
+
+		
+			<section id="layers-widget-column-3" class="widget layers-content-widget row content-vertical-massive section-features ">
+													<div class="row container list-grid">
+												
+							<div id="layers-widget-column-3-402" class="layers-masonry-column layers-widget-column-402 span-4  column has-image">
+								
+								<div class="media image-top small">
+																			<div class="media-image ">
+																							<img width="60" height="60" src="wp-content/uploads/2015/11/features-1.png" class="attachment-full" alt="features-1" />																					</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Easily Customised																									</h5>
+																																		<div class="excerpt"><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p></div>
+																																</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-3-895" class="layers-masonry-column layers-widget-column-895 span-4  column has-image">
+								
+								<div class="media image-top small">
+																			<div class="media-image ">
+																							<img width="73" height="60" src="wp-content/uploads/2015/11/features-2.png" class="attachment-full" alt="features-2" />																					</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Responsive REady																									</h5>
+																																		<div class="excerpt"><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p></div>
+																																</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-3-553" class="layers-masonry-column layers-widget-column-553 span-4 last  column has-image">
+								
+								<div class="media image-top small">
+																			<div class="media-image ">
+																							<img width="41" height="60" src="wp-content/uploads/2015/11/features-3.png" class="attachment-full" alt="features-3" />																					</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Modern Design																									</h5>
+																																		<div class="excerpt"><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p></div>
+																																</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-3-43" class="layers-masonry-column layers-widget-column-43 span-4  column has-image">
+								
+								<div class="media image-top small">
+																			<div class="media-image ">
+																							<img width="56" height="60" src="wp-content/uploads/2015/11/features-4.png" class="attachment-full" alt="features-4" />																					</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Clean Code																									</h5>
+																																		<div class="excerpt"><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p></div>
+																																</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-3-737" class="layers-masonry-column layers-widget-column-737 span-4  column has-image">
+								
+								<div class="media image-top small">
+																			<div class="media-image ">
+																							<img width="72" height="60" src="wp-content/uploads/2015/11/features-5.png" class="attachment-full" alt="features-5" />																					</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Ready to Ship																									</h5>
+																																		<div class="excerpt"><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p></div>
+																																</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-3-78" class="layers-masonry-column layers-widget-column-78 span-4 last  column has-image">
+								
+								<div class="media image-top small">
+																			<div class="media-image ">
+																							<img width="79" height="60" src="wp-content/uploads/2015/11/features-6.png" class="attachment-full" alt="features-6" />																					</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Download for Free																									</h5>
+																																		<div class="excerpt"><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p></div>
+																																</div>
+																	</div>
+							</div>
+											</div>
+				
+			</section>
+					
+			<section id="layers-widget-column-5" class="widget layers-content-widget row content-vertical-massive section-portfolio ">
+													<div class="row  list-grid">
+												
+							<div id="layers-widget-column-5-923" class="layers-masonry-column layers-widget-column-923 span-3  column-flush has-image">
+								
+								<div class="media no-push-bottom image-top small">
+																			<div class="media-image ">
+											<a href="#">												<img width="480" height="350" src="wp-content/uploads/2015/11/portfolio-1.jpg" class="attachment-medium" alt="portfolio-1" />											</a>										</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Project Name																									</h5>
+																																		<div class="excerpt"><p>User Interface Design</p></div>
+																																		<a href="#" class="button btn-small">View</a>
+																					</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-5-802" class="layers-masonry-column layers-widget-column-802 span-3  column-flush has-image">
+								
+								<div class="media no-push-bottom image-top small">
+																			<div class="media-image ">
+											<a href="#">												<img width="480" height="350" src="wp-content/uploads/2015/11/portfolio-2.jpg" class="attachment-medium" alt="portfolio-2" />											</a>										</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Project Name																									</h5>
+																																		<div class="excerpt"><p>User Interface Design</p></div>
+																																		<a href="#" class="button btn-small">View</a>
+																					</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-5-185" class="layers-masonry-column layers-widget-column-185 span-3  column-flush has-image">
+								
+								<div class="media no-push-bottom image-top small">
+																			<div class="media-image ">
+											<a href="#">												<img width="480" height="350" src="wp-content/uploads/2015/11/portfolio-3.jpg" class="attachment-medium" alt="portfolio-3" />											</a>										</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Project Name																									</h5>
+																																		<div class="excerpt"><p>User Interface Design</p></div>
+																																		<a href="#" class="button btn-small">View</a>
+																					</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-5-5" class="layers-masonry-column layers-widget-column-5 span-3 last  column-flush has-image">
+								
+								<div class="media no-push-bottom image-top small">
+																			<div class="media-image ">
+											<a href="#">												<img width="480" height="350" src="wp-content/uploads/2015/11/portfolio-4.jpg" class="attachment-medium" alt="portfolio-4" />											</a>										</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Project Name																									</h5>
+																																		<div class="excerpt"><p>User Interface Design</p></div>
+																																		<a href="#" class="button btn-small">View</a>
+																					</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-5-17" class="layers-masonry-column layers-widget-column-17 span-3  column-flush has-image">
+								
+								<div class="media no-push-bottom image-top small">
+																			<div class="media-image ">
+											<a href="#">												<img width="480" height="350" src="wp-content/uploads/2015/11/portfolio-5.jpg" class="attachment-medium" alt="portfolio-5" />											</a>										</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Project Name																									</h5>
+																																		<div class="excerpt"><p>User Interface Design</p></div>
+																																		<a href="#" class="button btn-small">View</a>
+																					</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-5-982" class="layers-masonry-column layers-widget-column-982 span-3  column-flush has-image">
+								
+								<div class="media no-push-bottom image-top small">
+																			<div class="media-image ">
+											<a href="#">												<img width="480" height="350" src="wp-content/uploads/2015/11/portfolio-6.jpg" class="attachment-medium" alt="portfolio-6" />											</a>										</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Project Name																									</h5>
+																																		<div class="excerpt"><p>User Interface Design</p></div>
+																																		<a href="#" class="button btn-small">View</a>
+																					</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-5-826" class="layers-masonry-column layers-widget-column-826 span-3  column-flush has-image">
+								
+								<div class="media no-push-bottom image-top small">
+																			<div class="media-image ">
+											<a href="#">												<img width="480" height="350" src="wp-content/uploads/2015/11/portfolio-7.jpg" class="attachment-medium" alt="portfolio-7" />											</a>										</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Project Name																									</h5>
+																																		<div class="excerpt"><p>User Interface Design</p></div>
+																																		<a href="#" class="button btn-small">View</a>
+																					</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-5-616" class="layers-masonry-column layers-widget-column-616 span-3 last  column-flush has-image">
+								
+								<div class="media no-push-bottom image-top small">
+																			<div class="media-image ">
+											<a href="#">												<img width="480" height="350" src="wp-content/uploads/2015/11/portfolio-4.jpg" class="attachment-medium" alt="portfolio-4" />											</a>										</div>
+									
+																			<div class="media-body text-center">
+																							<h5 class="heading">
+																											Project Name																									</h5>
+																																		<div class="excerpt"><p>User Interface Design</p></div>
+																																		<a href="#" class="button btn-small">View</a>
+																					</div>
+																	</div>
+							</div>
+											</div>
+				
+			</section>
+					
+			<section id="layers-widget-column-8" class="widget layers-content-widget row content-vertical-massive section-team ">
+													<div class="row container list-grid">
+												
+							<div id="layers-widget-column-8-926" class="layers-masonry-column layers-widget-column-926 span-3  column has-image">
+								
+								<div class="media image-top medium">
+																			<div class="media-image ">
+																							<img width="270" height="270" src="wp-content/uploads/2015/11/team-1.jpg" class="attachment-medium" alt="team-1" />																					</div>
+									
+																			<div class="media-body text-left">
+																							<h5 class="heading">
+																											Ruth Woods																									</h5>
+																																		<div class="excerpt"><p><strong>Founder, CEO</strong></p><p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p></div>
+																																</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-8-874" class="layers-masonry-column layers-widget-column-874 span-3  column has-image">
+								
+								<div class="media image-top medium">
+																			<div class="media-image ">
+																							<img width="270" height="270" src="wp-content/uploads/2015/11/team-2.jpg" class="attachment-medium" alt="team-2" />																					</div>
+									
+																			<div class="media-body text-left">
+																							<h5 class="heading">
+																											Timothy Reed																									</h5>
+																																		<div class="excerpt"><p><strong>Co-Founder, Developer</strong></p><p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p></div>
+																																</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-8-865" class="layers-masonry-column layers-widget-column-865 span-3  column has-image">
+								
+								<div class="media image-top medium">
+																			<div class="media-image ">
+																							<img width="270" height="270" src="wp-content/uploads/2015/11/team-3.jpg" class="attachment-medium" alt="team-3" />																					</div>
+									
+																			<div class="media-body text-left">
+																							<h5 class="heading">
+																											Victoria Valdez																									</h5>
+																																		<div class="excerpt"><p><strong>UI Designer</strong></p><p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p></div>
+																																</div>
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-8-808" class="layers-masonry-column layers-widget-column-808 span-3 last  column has-image">
+								
+								<div class="media image-top medium">
+																			<div class="media-image ">
+																							<img width="270" height="270" src="wp-content/uploads/2015/11/team-4.jpg" class="attachment-medium" alt="team-4" />																					</div>
+									
+																			<div class="media-body text-left">
+																							<h5 class="heading">
+																											Beverly Little																									</h5>
+																																		<div class="excerpt"><p><strong>Data Scientist</strong></p><p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p></div>
+																																</div>
+																	</div>
+							</div>
+											</div>
+				
+			</section>
+					
+			<section id="layers-widget-column-9" class="widget layers-content-widget row content-vertical-massive section-test ">
+													<div class="row  list-grid">
+												
+							<div id="layers-widget-column-9-296" class="layers-masonry-column layers-widget-column-296 span-6  column content">
+								
+								<div class="media invert image-top large">
+									
+																	</div>
+							</div>
+						
+							<div id="layers-widget-column-9-102" class="layers-masonry-column layers-widget-column-102 span-6 last  column">
+								
+								<div class="media invert image-top medium">
+									
+																			<div class="media-body text-left">
+																							<h5 class="heading">
+																											“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”																									</h5>
+																																		<div class="excerpt"><p>Susan Sims, Interaction Designer at XYZ</p></div>
+																																</div>
+																	</div>
+							</div>
+											</div>
+				
+			</section>
+					
+			
+				<section id="layers-widget-slide-5" class="widget layers-slider-widget row slide swiper-container section-download  container auto-height slider-layout-boxed not-full-screen single-slide" style="" >
+
+					
+					<div class="widget-layers-widget-slide-5-pages pages animate">
+													<a href="" class="page animate active"></a>
+											</div>
+
+			 		<div class="swiper-wrapper">
+													<div  class="swiper-slide has-image image-top text-center" id="layers-widget-slide-5-333" style="float: left; ">
+								
+								<div class="overlay content" >
+									<div class="container clearfix">
+																					<div class="copy-container">
+												<div class="section-title medium">
+																											<h3 data-swiper-parallax="-100" class="heading">Are You Ready to Start? Download Now For Free!</h3>
+																																								<div data-swiper-parallax="-300" class="excerpt"><p>Fusce dapibus, tellus ac cursus commodo</p></div>
+																																								<a data-swiper-parallax="-200" href="#" class="button btn-medium">Download Here</a>
+																									</div>
+											</div>
+																													</div> <!-- .container -->
+								</div> <!-- .overlay -->
+							</div>
+									 		</div>
+		 		</section>
+
+		 	
+						 	<script>
+					jQuery(function($){
+
+						var widget_layers_widget_slide_5_slider = $('#layers-widget-slide-5').swiper({
+						mode:'horizontal'
+						,bulletClass: 'swiper-pagination-switch'
+						,bulletActiveClass: 'swiper-active-switch swiper-visible-switch'
+						,paginationClickable: true
+						,watchActiveIndex: true
+																											,loop: false
+							,noSwiping: true
+							,allowSwipeToPrev: false
+							,allowSwipeToNext: false
+																											});
+
+						
+													layers_swiper_resize( widget_layers_widget_slide_5_slider );
+							$(window).resize(function(){
+								layers_swiper_resize( widget_layers_widget_slide_5_slider );
+							});
+						
+						$('#layers-widget-slide-5').find('.arrows a').on( 'click' , function(e){
+							e.preventDefault();
+
+							// "Hi Mom"
+							$that = $(this);
+
+							if( $that.hasClass( 'swiper-pagination-switch' ) ){
+								// Anchors
+								widget_layers_widget_slide_5_slider.slideTo( $that.index() );
+							} else if( $that.hasClass( 'l-left-arrow' ) ){
+								// Previous
+								widget_layers_widget_slide_5_slider.slidePrev();
+							} else if( $that.hasClass( 'l-right-arrow' ) ){
+								// Next
+								widget_layers_widget_slide_5_slider.slideNext();
+							}
+
+							return false;
+						});
+
+						widget_layers_widget_slide_5_slider.init();
+					})
+			 	</script>
+
+		
+			<div id="back-to-top">
+				<a href="#top">Наверх</a>
+			</div> <!-- back-to-top -->
+
+		</section>
+
+		
+		<footer id="footer" class="footer-site invert">
+						<div class="container  clearfix">
+				
+														<div class="row">
+																			<div class="column span-4 ">
+								<section id="text-5" class="widget widget_text"><h5 class="section-nav-title">Location</h5>			<div class="textwidget">3481 Melrose Place <br>
+Beverly Hills, CA 90210</div>
+		</section>							</div>
+													<div class="column span-4 ">
+								<section id="nav_menu-2" class="widget widget_nav_menu"><h5 class="section-nav-title">Share with Love</h5><div class="menu-social-mnu-container"><ul id="menu-social-mnu" class="menu"><li id="menu-item-49" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49"><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="http://linkedin"><i class="fa fa-linkedin-square"></i></a></li>
+</ul></div></section>							</div>
+													<div class="column span-4 last">
+								<section id="text-7" class="widget widget_text"><h5 class="section-nav-title">About ActiveBox</h5>			<div class="textwidget">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</div>
+		</section>							</div>
+											</div>
+									
+								<div class="row copyright">
+											<div class="column span-6">
+							<p class="site-text">Copyright © 2015 ActiveBox. All Rights Reserved <br>Made with love by Kamal Chaneman</p>
+						</div>
+										<div class="column span-6 clearfix t-right">
+											</div>
+				</div>
+							</div>
+			
+							<a class="created-using-layers" target="_blank" tooltip="Built with Layers" href="http://www.layerswp.com"><span>Built with Layers</span></a>					</footer><!-- END / FOOTER -->
+		
+	</section><!-- END / MAIN SITE #wrapper -->
+		<script>jQuery(function($) { 
+ 
+$('a[href^="#"]').live('click',function(event){
+    event.preventDefault();
+    var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
+    //change this number to create the additional off set        
+    var customoffset = 40;
+    $('html, body').animate({scrollTop:target_offset - customoffset}, 500);
+});
+ 
+}(jQuery));</script><link rel='stylesheet' id='layers-slider-css'  href='wp-content/themes/layerswp/core/widgets/css/swiper.css' type='text/css' media='all' />
+<link rel='stylesheet' id='layers-inline-styles-css'  href='wp-content/themes/layerswp/assets/css/inline.css' type='text/css' media='all' />
+<style id='layers-inline-styles-inline-css' type='text/css'>
+
+ body { font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;} 
+ h1,h2,h3,h4,h5,h6, .heading { font-family: Open Sans, "Helvetica Neue", Helvetica, sans-serif;} 
+ button, .button, input[type=submit] { font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;} 
+ .header-site, .header-site.header-sticky { background-color: rgba(47, 50, 77, 1); } 
+ .footer-site { background-color: #3a3e64; } 
+ .title-container { background-color: #2f324d; } 
+  input[type="button"],    input[type="submit"],    button,    .button,    .form-submit input[type="submit"],    .invert input[type="button"],    .invert input[type="submit"],    .invert button,    .invert .button,    .invert .form-submit input[type="submit"]{ background-color: #e84545; color: #FFFFFF; } 
+  input[type="button"]:hover,    input[type="submit"]:hover,    button:hover,    .button:hover,    .form-submit input[type="submit"]:hover,    .invert input[type="button"]:hover,    .invert input[type="submit"]:hover,    .invert button:hover,    .invert .button:hover,    .invert .form-submit input[type="submit"]:hover{ background-color: #ef7d7d; color: #FFFFFF; } 
+.copy a:not(.button),  .story a:not(.button){ color: #e84545;border-bottom-color: #e84545;} 
+.copy a:not(.button):hover,  .story a:not(.button):hover{ color: #ef7d7d;border-bottom-color: #ef7d7d;} 
+.main-slider .section-title.large .heading { font-size: 7rem; text-transform: uppercase; font-weight: 700; line-height: 1.1; margin-bottom: 25px; margin-top: 80px; }.main-slider .section-title.large .excerpt { font-size: 2rem; color: #fff; }.main-slider .button { margin-top: 65px; }.main-slider .swiper-slide .overlay { padding-bottom: 120px; }
+ #layers-widget-slide-3-10 { background-color: #2d314c; background-repeat: no-repeat;background-position: center;background-size: cover;background-image: url('wp-content/uploads/2015/11/bg.jpg');} 
+ #layers-widget-slide-3-858 { background-color: #2d314c; background-repeat: no-repeat;background-position: center;background-size: cover;background-image: url('wp-content/uploads/2015/11/bg.jpg');} 
+ #layers-widget-column-3 { background-repeat: no-repeat;background-position: center;} 
+.section-features { padding: 120px 0 50px }.section-features .media .heading { margin: 18px 0; font-size: 1.4rem; text-transform: uppercase; }.section-features .media .heading + .excerpt { font-size: 1.35rem; padding: 0 3%; }.section-features .column { margin-bottom: 76px; }
+ #layers-widget-column-3-402 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-3-895 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-3-553 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-3-43 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-3-737 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-3-78 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-5 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-5 { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; } 
+.wrapper-site .section-portfolio .media { overflow: hidden; display: block; }.wrapper-site .section-portfolio .media-image  { border-top: #fff 1px solid; border-left: #fff 1px solid;  }.wrapper-site .section-portfolio .media .media-image img { transition: all .5s ease; }.wrapper-site .section-portfolio .media:hover .media-image img { transform: scale(1.5) rotateZ(25deg) }.wrapper-site .media .heading + .excerpt { margin-top: 0; }.wrapper-site .section-portfolio .media-body { position: absolute; top: 0; background: rgba(232,69,69,.8); height: 100%; margin:0; transition: all .8s ease; opacity: 0; -webkit-transform: translateZ(0); }.wrapper-site .section-portfolio .media:hover .media-body { opacity: 1; } .section-portfolio .media .heading { margin-top: 25%; text-transform: uppercase; }.section-portfolio .button { background: none; border: #fff 1px solid; padding: 5px 20px; text-transform: uppercase; }.section-portfolio .button:hover { background: #fff; color: #E84545; }
+ #layers-widget-column-5-923 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-5-923 h5.heading a,  #layers-widget-column-5-923  h5.heading,  #layers-widget-column-5-923  div.excerpt,  #layers-widget-column-5-923  div.excerpt p{ color: #ffffff;} 
+ #layers-widget-column-5-802 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-5-802 h5.heading a,  #layers-widget-column-5-802  h5.heading,  #layers-widget-column-5-802  div.excerpt,  #layers-widget-column-5-802  div.excerpt p{ color: #ffffff;} 
+ #layers-widget-column-5-185 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-5-185 h5.heading a,  #layers-widget-column-5-185  h5.heading,  #layers-widget-column-5-185  div.excerpt,  #layers-widget-column-5-185  div.excerpt p{ color: #ffffff;} 
+ #layers-widget-column-5-5 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-5-5 h5.heading a,  #layers-widget-column-5-5  h5.heading,  #layers-widget-column-5-5  div.excerpt,  #layers-widget-column-5-5  div.excerpt p{ color: #ffffff;} 
+ #layers-widget-column-5-17 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-5-17 h5.heading a,  #layers-widget-column-5-17  h5.heading,  #layers-widget-column-5-17  div.excerpt,  #layers-widget-column-5-17  div.excerpt p{ color: #ffffff;} 
+ #layers-widget-column-5-982 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-5-982 h5.heading a,  #layers-widget-column-5-982  h5.heading,  #layers-widget-column-5-982  div.excerpt,  #layers-widget-column-5-982  div.excerpt p{ color: #ffffff;} 
+ #layers-widget-column-5-826 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-5-826 h5.heading a,  #layers-widget-column-5-826  h5.heading,  #layers-widget-column-5-826  div.excerpt,  #layers-widget-column-5-826  div.excerpt p{ color: #ffffff;} 
+ #layers-widget-column-5-616 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-5-616 h5.heading a,  #layers-widget-column-5-616  h5.heading,  #layers-widget-column-5-616  div.excerpt,  #layers-widget-column-5-616  div.excerpt p{ color: #ffffff;} 
+ #layers-widget-column-8 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-8 { padding-top: 100px; padding-bottom: 100px; } 
+.section-team .media .heading { font-family: Raleway; margin-top: 6px; }.section-team .media .heading + .excerpt { font-size: 1.4rem; }.section-team .media .heading + .excerpt strong { text-transform: uppercase; color: #E84545; font-size: 1.3rem; font-weight: normal; }.section-team .column .media-image { overflow: hidden; }.section-team .column .media-image img { transition: all .5s ease; }.section-team .column:hover .media-image img { transform: scale(1.1) }
+ #layers-widget-column-8-926 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-8-874 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-8-865 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-8-808 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-9 { background-color: #53354a; background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-column-9 { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; } 
+.section-test .container { padding: 0; }.section-test .column.span-6 { min-height: 480px; margin-bottom: 0; padding: 7% 5%; }.section-test .media .heading { font-family: Cardo; font-style: italic; font-size: 3.2rem; margin-bottom: 20px; max-width: 500px; }.section-test .media .heading + .excerpt { text-transform: uppercase; font-weight: bold; font-size: 1.3rem; }
+ #layers-widget-column-9-296 { background-repeat: no-repeat;background-position: center;background-size: cover;background-image: url('wp-content/uploads/2015/11/woman.jpg');} 
+ #layers-widget-column-9-102 { background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-slide-5 .swiper-slide > .content { padding-top: 90px; padding-bottom: 90px; } 
+.section-download .section-title .heading { font-family: Raleway; font-weight: 300; }.section-download .section-title .excerpt { text-transform: uppercase; font-size: 1.25rem; font-weight: bold; margin-bottom: 20px; }.section-download .button { padding: 12px 70px; }
+ #layers-widget-slide-5-333 { background-color: #ffffff; background-repeat: no-repeat;background-position: center;} 
+ #layers-widget-slide-5-333 h3.heading,  #layers-widget-slide-5-333  h3.heading a,  #layers-widget-slide-5-333  div.excerpt{ color: #2d3033;} 
+</style>
+<link rel='stylesheet' id='layers-custom-styles-css'  href='wp-content/themes/layerswp/assets/css/custom.css' type='text/css' media='all' />
+<style id='layers-custom-styles-inline-css' type='text/css'>
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+
+.container { max-width:1170px; }
+
+.header-site > .container { border-bottom: #4D4F66 1px solid; padding-top: 35px; }
+
+.header-site .nav-horizontal > ul > li > a { font-size: 13px; text-transform: uppercase; opacity: .75; }
+
+.header-site .nav-horizontal > ul > li { margin: 0px 25px }
+
+.container .button { font-size: 13px; text-transform: uppercase; font-weight: 500; border-radius: 2px; }
+
+.button.btn-large { padding: 12px 50px; }
+
+.header-sticky.is_stuck.is_stuck_show > .container { padding: 15px 0 0; }
+
+.footer-site { text-align: center; padding-bottom: 0; }
+
+.menu-social-mnu-container li { display: inline-block; }
+
+.menu-social-mnu-container li a { display: block; width: 36px; height: 36px; border: #fff 2px solid; text-align: center; line-height: 32px; border-radius: 1px; margin: 0 2px; }
+
+.footer-site .row { padding-bottom: 60px; } 
+
+.footer-site.invert .section-nav-title { color: #fff; font-size: 1.4rem; margin-bottom: 18px; }
+
+.footer-site .textwidget { font-size: 1.35rem; opacity: .5; }
+
+
+.footer-site .copyright { padding: 22px 0; border: none; background: #313454; margin-left: -800px; margin-right: -800px; }
+
+.copyright .column { width: 100%; color: #808080; font-size: 1.35rem; }
+</style>
+<script type='text/javascript' src='wp-content/themes/layerswp/assets/js/layers.framework.js'></script>
+<script type='text/javascript' src='wp-content/themes/layerswp/core/widgets/js/swiper.js'></script>
+</body>
+</html>
