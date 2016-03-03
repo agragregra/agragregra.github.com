@@ -1,0 +1,30 @@
+{
+  "name": "equalHeights",
+  "main": "equalHeights.js",
+  "homepage": "https://github.com/neomen/equalHeights",
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "keywords": [
+    "columns",
+    "height",
+    "jquery",
+    "responsive",
+    "resize",
+    "equal"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ],
+  "_release": "ab63c0fa66",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ab63c0fa6679c6719686a4758730ea0bc6b0ae01"
+  },
+  "_source": "git://github.com/neomen/equalHeights.git",
+  "_target": "*",
+  "_originalSource": "equalHeights",
+  "_direct": true
+}

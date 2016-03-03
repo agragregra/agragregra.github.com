@@ -1,0 +1,21 @@
+{
+  "name": "equalHeights",
+  "main": "equalHeights.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/neomen/equalHeights", 
+  "dependencies": {
+  	"jquery": ">=1.7"
+  },
+    "keywords": [
+    "columns",
+    "height",
+    "jquery",
+    "responsive",
+    "resize",
+    "equal"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ]
+}
