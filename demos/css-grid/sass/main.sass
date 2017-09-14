@@ -1,0 +1,265 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.grid
+	display: grid
+
+.main-header
+	min-height: 100vh
+	background-size: cover
+	background-position: center
+	position: relative
+	align-content: center
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: $dark
+		opacity: .92
+
+.header-content
+	z-index: 1
+	color: #fff
+	text-align: center
+	padding: 60px $gutter
+	h1
+		font-size: 60px
+		font-family: intro-grid, sans-serif
+		font-weight: normal
+		margin: 20px 0
+		line-height: 1.5
+	.button
+		margin: 10px
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 10px 60px
+	font-size: 20px
+	font-weight: 800
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+
+	&.button-gray
+		background-color: $gray
+		&::after
+			background-color: darken($gray, 15%)
+		&:hover
+			background-color: lighten($gray, 5%)
+			&::after
+				opacity: .22
+		&:active
+			background-color: darken($gray, 5%)
+			&::after
+				opacity: .32
+
+.portfolio-section
+	padding: 10px
+	grid-template-columns: repeat(4, 1fr)
+	grid-gap: 10px
+
+.portfolio-item
+	min-height: 32vh
+	background-size: cover
+	background-position: center
+	text-align: center
+	align-content: center
+	padding: $gutter
+	font-size: 20px
+	font-weight: bold
+	color: #fff
+	position: relative
+	transition: color .5s ease
+	cursor: pointer
+	&:hover
+		color: $accent
+		&::before
+			opacity: .85
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: $dark
+		opacity: .65
+		transition: opacity .5s ease
+	> *
+		z-index: 1
+
+	&:nth-child(1)
+		grid-column: 1 / 3
+	&:nth-child(5)
+		grid-column: 2 / 4
+	&:nth-child(6)
+		grid-column: 4
+		grid-row:  2 / 4
+
+.buttoncase
+	grid-column: 1 / 5
+	padding: $gutter $gutter 50px
+
+.container
+	max-width: 1200px
+	margin: auto
+	padding: 0 $gutter
+
+.landing-section
+	padding: 80px 0
+	h2
+		font-size: 34px
+		font-weight: 800
+		color: $dark
+		line-height: 1.2
+
+.section-ready
+	background-color: $light
+	.container
+		grid-template-columns: 1fr 1fr
+
+.ready-left
+	border-right: 1px solid #dadada
+	font-size: 18px
+	padding:
+		top: 60px
+		bottom: 60px
+		right: 60px
+	h2
+		margin-top: 0
+		margin-bottom: 40px
+.ready-right
+	padding-left: 40px
+
+.formsection
+	padding: 30px 0
+	background-color: $dark
+	input
+		background-color: lighten($dark, 6%)
+	form
+		grid-gap: $gutter
+		grid-template-columns: repeat(4, 1fr)
+	.button
+		font-size: 17px
+		padding: 14.5px
+		width: 100%
+
+input, textarea
+	border: none
+	padding: 15px 20px
+	width: 100%
+	font-family: Arial, sans-serif
+	font-style: italic
+	outline: none
+	transition: background-color .25s ease
+	&:focus
+		background-color: $light
+	&::placeholder
+		color: lighten($dark, 20%)
+
+.section-blog
+	h2
+		margin:
+			top: 0
+			bottom: 50px
+	.buttoncase
+		padding-bottom: 0
+
+.blog-home
+	grid-gap: $gutter
+	grid-template-columns: repeat(4, 1fr)
+
+.blog-item
+	background-color: #F7F7F7
+	text-decoration: none
+	grid-template-rows: 1fr 1fr
+	transition: background-color .25s ease
+	overflow: hidden
+	color: #333
+	&:nth-child(3)
+		grid-column: 3 / 5
+	&:nth-child(4)
+		grid-column: 1 / 3
+	&:hover
+		background-color: $light
+		h4
+			color: $dark
+		.blog-item-img
+			transform: scale(1.05) translateY(-6.5px)
+	&-img
+		height: 270px
+		background-size: cover
+		background-position: center
+		transition: transform .25s ease
+	&-content
+		padding: 25px
+		text-align: center
+		align-content: center
+		h4
+			font-size: 18px
+			color: #666
+			line-height: 1.3
+			margin: 0
+			transition: color .25s ease
+		p
+			margin:
+				top: 20px
+				bottom: 0
+
+.main-footer
+	padding: 60px 0
+	background-color: darken($dark, 8%)
+	text-align: center
+	color: #4E5355
+
+.footer-logo
+	font-family: intro-grid, sans-serif
+	font-size: 22px
+	line-height: 1.16
+	span
+		display: block
+		color: #707476
+		font-size: 26.8px
+
+.footer-copy
+	font-size: 20px
+	font-weight: bold
+	color: #494D50
+	margin-top: 20px
+
+@import "media" // Всегда в конце

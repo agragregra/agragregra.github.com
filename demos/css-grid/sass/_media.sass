@@ -1,0 +1,149 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.blog-home
+		grid-template-columns: repeat(3, 1fr)
+		.buttoncase
+			grid-column: 1 / 4
+	.blog-item
+		&:nth-child(3)
+			grid-column: 2 / 3
+			grid-row: 1
+		&:nth-child(4)
+			grid-column: 1 / 2
+			grid-row: 2
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.button
+		font-size: 18px
+	.buttoncase
+		grid-column: 1 / 4
+	.header-content
+		h1
+			font-size: 50px
+			line-height: 1.3
+
+	.portfolio-section
+		grid-template-columns: repeat(3, 1fr)
+	.portfolio-item
+		min-height: 40vh
+		font-size: 16px
+		&:nth-child(4)
+			grid-column: 2 / 4
+		&:nth-child(5)
+			grid-column: 1 / 3
+			grid-row: initial
+		&:nth-child(6)
+			grid-column: initial
+			grid-row:  initial
+
+	.blog-home
+		grid-template-columns: repeat(2, 1fr)
+		.buttoncase
+			grid-column: 1 / 3
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.header-content
+		padding: 40px 20px
+		h1
+			font-size: 50px
+
+	.landing-section
+		padding: 50px 0
+		h2
+			text-align: center
+			font-size: 26px
+			margin-bottom: 26px
+
+	.section-ready
+		.container
+			grid-template-columns: 1fr
+			> div
+				padding: 0 8%
+				&.ready-left
+					border: none
+	
+	.formsection
+		form
+			grid-template-columns: 1fr 1fr
+
+	.blog-home
+		grid-template-columns: 1fr
+		.buttoncase
+			grid-column: 1 / 2
+	.blog-item
+		&:nth-child(3)
+			grid-column: initial
+		&:nth-child(4)
+			grid-column: initial
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.header-content
+		h1
+			font-size: 40px
+
+	.portfolio-section
+		grid-template-columns: 1fr
+	.portfolio-item
+		min-height: 50vh
+		&:nth-child(1)
+			grid-column: initial
+		&:nth-child(4)
+			grid-column: initial
+		&:nth-child(5)
+			grid-column: initial
+
+	.buttoncase
+		grid-column: 1 / 2
+
+	.formsection
+		form
+			grid-template-columns: 1fr
+
+	.main-footer
+		padding: 40px 0
+	.footer-copy
+		margin-top: 10px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
