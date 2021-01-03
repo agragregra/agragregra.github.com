@@ -1,0 +1,133 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.s_tizers .row > div {
+		text-align: center;
+	}
+	.tiz_descr {
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.s_tizers .row > div {
+		text-align: left;
+	}
+	.tiz_descr {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.profi_item:last-child {
+		margin-bottom: 30px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.top_phone, .logo, .top_header h1, .top_header h2 {
+		text-align: center;
+	}
+	.logo {
+		margin-bottom: 15px;
+	}
+	.top_phone .tab_item {
+		font-size: 30px;
+	}
+	.s_contacts h2 {
+		margin-bottom: 20px;
+	}
+
+}
+
+@media only screen and (max-width : 600px) {
+	.profi_item {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.top_header {
+		margin-top: 30px;
+	}
+	.top_header h1 {
+		font-size: 50px;
+		line-height: 50px;
+	}
+	.top_header h2 {
+		font-size: 28px;
+	}
+	.tabs_header .tabs .tab {
+		font-size: 12px;
+		padding: 15px 15px;
+	}
+	.button_wrap {
+		text-align: center;
+	}
+	section h2 {
+		font-size: 38px;
+		line-height: 42px;
+	}
+	form h2 {
+		font-size: 22px;
+	}
+	.button {
+		font-size: 15px;
+	}
+	.s_contacts .tabs .tab {
+		padding: 0 20px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+@media (min-height: 780px) and (min-width: 1400px) {
+	.tabs_header {
+		position: absolute;
+		bottom: 80px;
+	}
+	.tabs_header > div {
+		width: 100%;
+		max-width: 660px;
+	}
+	.top_header {
+		margin-top: 150px;
+	}
+}

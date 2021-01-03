@@ -1,0 +1,123 @@
+@import "../bourbon/bourbon"
+
+$text-color: #333
+$dark-color: #222
+$first-color: #470731
+$second-color: #9B1818
+$form-color: #CCCCCC
+
+body
+	color: $text-color
+
+h1
+	color: #fff
+
+section,
+footer
+	h2
+		color: $second-color
+	&.s_dark
+		h2, h3, p
+			color: #fff
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: $form-color
+	box-shadow: $form-color 0 0 0 2px
+	border-color: $form-color
+
+body input:required:valid,
+body textarea:required:valid
+	color: $form-color
+
+/* Top Image Opacity Overlay */
+.image_overlay
+	background-color: rgba(0,0,0,.2)
+
+/* Reviews Image Opacity Overlay */
+.s_rewview
+	.image_overlay
+		background-color: rgba(0,0,0,.7)
+
+/* Middle Image Opacity Overlay */
+.red_overlay
+	background-color: rgba(darken($second-color, 12%), .9)
+
+.bottom_phone
+	color: $first-color
+
+.loader
+	.loader_inner
+		background-image: url("../../img/preloader.gif")
+
+.tabs_header
+	.tabs
+		.tab
+			&.active
+				color: $dark-color
+	.tab_content
+		color: $dark-color
+
+.button
+	background-color: $dark-color
+	&.btn_red
+		background-color: $first-color
+	&.btn_green
+		background-color: $first-color
+	&.btn_white
+		background-color: #fff
+		color: $dark-color
+
+.s_tizers
+	+linear-gradient(lighten($second-color, 70%), lighten($second-color, 63%))
+	color: $second-color
+
+.prifi_left
+	color: $first-color
+
+.profi_right
+	h3
+		color: $first-color
+		&::after
+			background-color: $first-color
+
+form
+	border: $form-color 5px solid
+	.form_error
+		color: $first-color
+	input,
+	select
+		&:focus
+			box-shadow: $form-color 0 0 0 2px
+			border-color: $form-color
+	h2
+		color: $first-color
+
+.review_item
+	.image_wrap
+		img
+			&:hover
+				box-shadow: $first-color 0 0 0 2px
+
+.s_back
+	background-color: $first-color
+
+.s_contacts
+	h2
+		color: $dark-color
+	.tabs
+		.tab
+			border: $first-color 5px solid
+			color: $first-color
+			&.active
+				background-color: $first-color
+
+.map
+	background-color: $text-color
+
+footer
+	h2
+		color: $text-color
+
+.my.my_ex
+	background-color: $first-color
